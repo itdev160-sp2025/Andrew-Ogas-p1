@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Venderator: Kegerator + Vending</title>
+        <link rel="stylesheet" type="text/css" href="./css/main.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Overpass+Mono:wght@300..700&family=Playwrite+FR+Moderne:wght@100..400&display=swap" rel="stylesheet">    </head>
+    <body>
+        <header>
+            <h1>Venderator</h1>
+        </header>
+        <main>
+            <div>
+                <div class="kegStatus">
+                    <div class="title">
+                        <h2>System Status</h2>
+                    </div>
+                    <div class="systemInfo">
+                        <p id="sysTemp">Temp: -0&deg;F</p>
+                        <p>Access Status:</p>
+                        <div id="accessStatus">
+                            <p id="currentAccessLevel">N/A</p>
+                        </div>
+                    </div>
+                    <div class="kegInfo" id="keg1">
+                        <div class="keglock">
+                            <img src="./images/padlock.png" alt="lock">
+                        </div>
+                        <div class="infoDisplay">
+                            <p class="kegContents" id="keg1Contents">Contents: N/A</p>
+                            <p class="kegPressure" id="keg1Pressure">Pressure: -0psi</p>
+                                <div class="kegVolume">
+                                    <div id="keg1DisplayVolume"></div>
+                                    <p id="keg1Volume">0%</p>
+                                </div>
+                        </div>
+                    </div>
+                    <div class="kegInfo" id="keg2">
+                        <div class="keglock">
+                            <img src="./images/padlock.png" alt="lock">
+                        </div>
+                        <div class="infoDisplay">
+                            <p class="kegContents" id="keg2Contents">Contents: N/A</p>
+                            <p class="kegPressure" id="keg2Pressure">Pressure: -0psi</p>
+                            <div class="kegVolume">
+                                <div id="keg2DisplayVolume"></div>
+                                <p id="keg2Volume">0%</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="systemAccessControls">
+                        <input type="button" id="lockSystem" value="Lock" class="accessButtons">
+                        <input type="button" id="generalAccess" value="General" class="accessButtons">
+                        <input type="button" id="restrictedAccess" value="Restricted" class="accessButtons">
+                        <input type="button" id="adultOnly" value="Adult" class="accessButtons">
+                    </div>
+                </div>
+            </div>
+            <div>
+                <div class="vendListing">
+                    <img src="./images/Polar_Grapefruit.jpg" alt="Grapefruit, the best flavor seltzer">
+                    <div class="bevName"><p>Polar - Grapefruit</p></div>
+                    <div class="bevRatingG"><p>G</p></div>
+                    <div class="spacer"></div>
+                    <div class="bevDescription">
+                        <p>(Seltzer)<br>
+                        Grapefruit, the best seltzer flavor, providing refreshment and hydration without calories</P></div>
+                    <div class="bevDetails">
+                        <p>Cal:0 Carb:0</p>
+                    </div>
+                    <div class="bevQuantity"><p id="bevQ1">-1</p></div>
+                </div>
+                <div class="vendListing">
+                    <img src="./images/EaglePark_SetList.jpg" alt="EaglePark_SetList">
+                    <div class="bevName">
+                        <p>Eagle Park - Set List</p>
+                    </div>
+                    <div class="bevRatingA">
+                        <p>A</p>
+                    </div>
+                    <div class="spacer"></div>
+                    <div class="bevDescription">
+                        <p>(Beer - American IPA)<br>
+                            Citrusy hop forward flavor, a wonderful compliment to a meal, or just relaxing</P>
+                    </div>
+                    <div class="bevDetails">
+                        <p>ABV:5.6% </p>
+                    </div>
+                    <div class="bevQuantity">
+                        <p id="bevQ2">-1</p>
+                    </div>
+                </div>
+                <div class="vendListing">
+                    <img src="./images/Monster.jpg" alt="Monster Energy">
+                    <div class="bevName">
+                        <p>Monster - Original</p>
+                    </div>
+                    <div class="bevRatingR">
+                        <p>R</p>
+                    </div>
+                    <div class="spacer"></div>
+                    <div class="bevDescription">
+                        <p>(Energy Drink)<br>
+                            Classic Monster, Unleashe The Beast</P>
+                    </div>
+                    <div class="bevDetails">
+                        <p>Cal:210 Carb:54g Caf:160mg</p>
+                    </div>
+                    <div class="bevQuantity">
+                        <p id="bevQ3">-1</p>
+                    </div>
+                </div>
+                <div class="vendListing">
+                    <img src="./images/mello_yello.jpg" alt="Mello Yello">
+                    <div class="bevName">
+                        <p>Mello Yello</p>
+                    </div>
+                    <div class="bevRatingR">
+                        <p>R</p>
+                    </div>
+                    <div class="spacer"></div>
+                    <div class="bevDescription">
+                        <p>(Soda)<br>
+                            A nice citrus beverage with a moderate amount of caffiene</P>
+                    </div>
+                    <div class="bevDetails">
+                        <p>Cal:120 Carb:32g Caf:49.5mg</p>
+                    </div>
+                    <div class="bevQuantity">
+                        <p id="bevQ4">-1</p>
+                </div>
+                </div>
+            </div>
+        </main>
+        <script src="./js/scripts.js"></script>
+    </body>
+</html>
